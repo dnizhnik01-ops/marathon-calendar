@@ -1,36 +1,3 @@
-# Marathon Calendar — Vercel Deployment
-
-## Структура
-```
-marathon-calendar/
-├── api/
-│   └── calendar.js   ← Serverless Function
-└── vercel.json       ← Конфигурация Vercel
-```
-
-## Деплой
-
-### Вариант 1 — через браузер (без CLI)
-1. Зайдите на vercel.com и войдите через GitHub
-2. Нажмите «Add New Project» → «Upload»
-3. Перетащите папку `marathon-calendar`
-4. Нажмите Deploy
-
-### Вариант 2 — через CLI
-```bash
-npm i -g vercel
-cd marathon-calendar
-vercel
-```
-
-## Эндпоинты после деплоя
-
-| URL | Результат |
-|-----|-----------|
-| `/api/calendar` | Все 5 дней |
-| `/api/calendar?day=1` | Только день 1 |
-| `/api/calendar?day=3` | Только день 3 |
-
-## Логика даты старта
-- Если сегодня **понедельник или четверг** и время **до 19:00 МСК** → стартуем сегодня
-- Иначе → ближайший следующий понедельник или четверг
+{
+  "version": 2
+}
